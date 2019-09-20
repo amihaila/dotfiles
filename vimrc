@@ -6,11 +6,15 @@ set pastetoggle=<F10>
 set number
 set autoindent
 set smartindent
+set expandtab
 inoremap jj <ESC>
+inoremap JJ <ESC>
 
 inoremap {{ <ESC>A {<ENTER>}<ESC>O
 map <SPACE> zz
 map U <C-R>
+map mm I//<ESC>j
+map MM $xxj
 
 let mapleader = ","
 nmap <leader>x :x<CR>
@@ -55,7 +59,7 @@ set background=dark
 " -- Colors and Things {{{
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
-highlight Comment cterm=italic
+"highlight Comment cterm=italic
 highlight Comment ctermfg=blue
 "autocmd BufRead,BufNewFile * syn match parens /[(){}]/ | hi parens ctermfg=DarkBlue
 "' -- }}}
@@ -73,18 +77,12 @@ let g:airline_theme = 'luna'
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_symbols.crypt = ''
-"let g:airline_symbols.linenr = '␊'
-"let g:airline_symbols.linenr = '␤'
-"let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.linenr = ''
 let g:airline_symbols.maxlinenr = ' ☰'
-"let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
-"let g:airline_symbols.spell = 'Ꞩ'
-"let g:airline_symbols.notexists = '∄'
 let g:airline_symbols.whitespace = 'Ξ'
 " -- }}}
 
