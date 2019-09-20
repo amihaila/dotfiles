@@ -17,6 +17,8 @@ alias l='ls -alrt'
 alias c='clear'
 alias x='exit'
 alias r='reset'
+alias rm='rm -i'
+alias t='tree'
 
 alias .v='vi ~/.bash_profile'
 alias .b='. ~/.bash_profile'
